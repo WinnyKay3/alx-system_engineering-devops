@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Displays list format content of current dir
+#Displays only part of the name after first dash
+
+list=$(ls)
+for k in $list; do
+	echo "$k" | cut -d '-' -f2
+done
