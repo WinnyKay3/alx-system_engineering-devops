@@ -1,0 +1,11 @@
+# configuration ssh client so that can connect to server with no pwd.
+Host *
+   User ubuntu
+   HostName 54.196.188.162
+   IdentityFile ~/.ssh/school
+   PasswordAuthentication no
+   IdentitiesOnly yes
+   PreferredAuthentications publickey
+   HashKnownHosts yes
+   GSSAPIAuthentication yes
+   GSSAPIDelegateCredentials no
