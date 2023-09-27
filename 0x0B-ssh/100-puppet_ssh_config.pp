@@ -1,5 +1,5 @@
 #using puppet to make changes to the default ssh config file
-include stdlb
+include stdlib
 
 file_line { 'Turn off passwd auth':
   ensure  => present,
