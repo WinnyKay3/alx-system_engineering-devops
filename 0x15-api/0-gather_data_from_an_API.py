@@ -22,7 +22,7 @@ if __name__ == "__main__":
     todo_response = requests.get(todo_url)
     todo_data = todo_response.json()
 
-    total_tasks = len(tod_data)
+    total_tasks = len(todo_data)
     completed_tasks = sum(1 for task in todo_data if task.get("completed"))
 
     # Displays the result
